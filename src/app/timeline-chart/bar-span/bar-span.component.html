@@ -1,0 +1,12 @@
+<div class="container"
+  [style.grid-template-columns]="gridConfigColumns"
+  [style.grid-template-rows]="gridConfigRows">
+
+  <span *ngFor="let span of spans"
+    [style.grid-column-start]="spans.indexOf(span)+1"
+    [style.grid-column-end]="spans.indexOf(span)+2"
+    [style.grid-row]="1/2">
+    {{span}}
+  </span>
+  
+</div> 
